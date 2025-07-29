@@ -1,0 +1,126 @@
+Apuntes- Unidad 1: Tu primera app para Android
+
+Ruta de aprendizaje 1: Introducción a Kotlin
+Las instrucciones paso a paso para lo que la computadora debe hacer se llama código.
+
+Necesitas algo llamado el compilador de Kotlin, que toma el código Kotlin que escribiste, lo analiza línea por línea y lo traduce a algo que la computadora puede comprender. Este proceso se denomina compilación de código.
+
+Función: Una función es un segmento del programa que realiza una tarea específica. Tu programa podría tener una o más funciones.
+
+Primero, debes definir una función en tu código. Esto significa que debes especificar todas las instrucciones necesarias para realizar esa tarea.
+
+Nota: Es posible que escuches la frase alternativa "declarar una función". Las palabras declarar y definir se pueden usar indistintamente y tienen el mismo significado. También puedes escuchar el término "definición de funciones" o "declaración de funciones", que hace referencia al código exacto que define una función. En otros lenguajes de programación, "declarar" y "definir" tienen significados diferentes.
+
+Define una función
+Estas son las partes clave necesarias para definir una función:
+
+La función necesita un nombre para que puedas llamarla más tarde.
+También puede requerir algunas entradas o información que se debe proporcionar cuando se la llama. La función usa estas entradas para lograr su propósito. Pedir entradas es opcional, y algunas funciones no las piden.
+La función también tiene un cuerpo que contiene las instrucciones para realizar la tarea.
+
+EN KOTLIN, UNA FUNCION SE VERIA:
+
+fun name (inputs) { 
+    body
+}
+
+La definición de la función comienza con la palabra fun.
+Luego, el nombre de la función es main.
+No hay entradas para la función, por lo que los paréntesis están vacíos.
+
+Los nombres de las funciones deben seguir la convención de mayúsculas y minúsculas, en la que la primera palabra del nombre de la función es minúscula. Si el nombre contiene varias palabras, no se escriben espacios entre ellas y todas las demás palabras deben comenzar con mayúscula.
+
+Ejemplos de nombres de funciones:
+
+calculateTip
+displayErrorMessage
+takePhoto
+
+Una entrada es un dato que necesita una función para cumplir su propósito. Cuando defines una función, puedes solicitar que se pasen ciertas entradas en el momento en que se la llama. Si una función no tiene entradas, los paréntesis aparecen vacíos en ().
+
+Guia de estilo de Kotlin:
+
+-Los nombres de las funciones deben seguir la convención de mayúsculas mediales y deben ser verbos o frases verbales.
+-Cada sentencia debe estar en su propia línea.
+-La llave de apertura debe aparecer al final de la línea donde comienza la función.
+-Debe haber un espacio antes de la llave de apertura.
+
+- Debe haber un espacio entre los paréntesis y la aprtura de la llave, asi:  fun main() { --el espacio
+
+-El cuerpo de la función debe tener una sangría de 4 espacios. No uses caracteres de tabulación para aplicar sangría al código. Escribe 4 espacios.
+
+-La llave de cierre se encuentra en su propia línea después de la última línea de código del cuerpo de la función. La llave de cierre debe alinearse con la palabra clave fun al comienzo de la función.
+
+
+Mensaje de error del Playground de Kotlin
+
+Los mensajes de error comienzan con la palabra "Expecting" porque el compilador de Kotlin "espera" algo, pero no lo encuentra en el código.
+
+
+
+CREA Y USA VARIABLES EN KOTLIN
+
+En programación, una variable es como una caja con una etiqueta: guarda un dato y se accede a él usando su nombre. Esto permite reutilizar valores y hacer que el código sea más flexible, en lugar de escribir datos fijos que solo sirven para un caso específico.
+
+Una analogía útil es la de una plantilla de carta con espacios como {nombre}, {ubicación} o {fecha}, que se completan con distintos datos según la persona. Así funciona el uso de variables en una app: partes del contenido cambian (como el nombre del usuario o los detalles de una noticia), mientras que otros elementos permanecen iguales.
+
+Por ejemplo, en una app de noticias o mapas, variables pueden almacenar el nombre del usuario, el nombre de una ubicación, su calificación, opiniones, dirección, etc. Esto permite que la app funcione con distintos datos sin necesidad de reescribir el código.
+
+Una expresión es una unidad de código pequeña que se evalúa como un valor. Puede constar de variables, llamadas a funciones y más. En el siguiente caso, la expresión consta de una variable: count. Esta expresión se evalúa como 2.
+
+Evaluar significa determinar el valor de una expresión. En este caso, la expresión se evalúa como 2. El compilador evalúa expresiones en el código y usa esos valores cuando ejecuta las instrucciones en el programa.
+
+fun main() {
+    val count: Int = 2 // Aquí se declara la variable
+    println(count)
+}
+
+
+PARA NOMBRAR VARIABLES
+
+La primera palabra del nombre de variable se escribe en minúscula. Si el nombre contiene varias palabras, no se escriben espacios entre ellas y todas las demás palabras deben comenzar con mayúscula.
+
+Ejemplos de nombres de variables:
+
+numberOfEmails
+cityName
+bookPublicationDate
+
+
+Se puede 
+
+val count = 2 //Inferencia de tipo (solo sirve si le doy un dato, aplica a todos los tipos de datos en Kotlin.)
+
+y
+
+val count: Int = 10
+
+
+// IMPORTANTEEEE
+Si necesitas actualizar el valor de una variable, declara la variable con la palabra clave de Kotlin var, en lugar de val.
+
+Palabra clave val: Úsala cuando esperes que el valor de la variable no cambie.
+Palabra clave var: Úsala cuando esperes que el valor de la variable pueda cambiar.
+Con val, la variable es de solo lectura, lo que significa que solo puedes leer el valor de la variable o acceder a él. Una vez que se establece el valor, no puedes editarlo ni modificarlo. Con var, la variable es mutable, lo que significa que el valor se puede cambiar o modificar. El valor se puede mutar.
+
+Cuando leas código que contenga strings, es posible que encuentres secuencias de escape. Las secuencias de escape son caracteres que van precedidos de un símbolo de barra invertida (\), que también se denomina barra invertida de escape.
+
+
+COMO CREAR Y USAR FUNCIONES
+
+Crear funciones diferentes para tareas específicas tiene una serie de beneficios.
+
+Código reutilizable: En lugar de copiar y pegar el código que necesitas usar más de una vez, simplemente puedes llamar a una función cuando sea necesario.
+Legibilidad: Garantizar que las funciones realicen una única tarea específica permite que otros desarrolladores y compañeros de equipo, así como tú mismo en el futuro, sepan con exactitud qué hace un fragmento de código.
+
+
+--- IMPORTANTE--------
+ Los parámetros son las variables a las que puede acceder la función, como una variable name, mientras que los argumentos son los valores reales que pasas, como la string "Rover".
+
+
+FIRMA DE LA FUNCION
+El nombre de la función y sus entradas (parámetros) se conocen colectivamente como firma de la función. 
+
+Los parámetros separados con comas se denominan lista de parámetros.
+
+Cuando incluyes un nombre de parámetro si llamas a una función, esta se denomina argumento con nombre.

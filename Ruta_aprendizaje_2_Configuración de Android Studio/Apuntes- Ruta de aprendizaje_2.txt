@@ -1,0 +1,40 @@
+Apuntes- Unidad 1: Tu primera app para Android
+
+Ruta de aprendizaje 2: Como configurar Android Studio
+
+Android Studio es el entorno de desarrollo integrado (IDE) oficial para el desarrollo de apps para Android creado y distribuido por Google. Un IDE contiene herramientas que permiten a los desarrolladores de software diseñar, compilar, ejecutar y probar software. En este caso, apps para la plataforma de Android. Android Studio usa IntelliJ IDEA como base, además del complemento para Android preinstalado con algunas modificaciones específicas para la plataforma de Android.
+
+En Android Studio, una plantilla de proyecto es un proyecto de Android que proporciona el plano para un tipo de app determinado. Las plantillas crean la estructura del proyecto y los archivos necesarios de modo que Android Studio compile tu proyecto. La plantilla que elijas te brindará un código de partida para que puedas avanzar más rápido.
+
+La plantilla Empty Activity es la que permite crear un proyecto simple que puedes usar para compilar una app de Compose.
+
+ Minimum SDK indica la versión mínima de Android en la que se puede ejecutar tu app.
+
+En la vista Project (1), se muestran los archivos y las carpetas de tu proyecto.
+En la vista Code (2), puedes editar el código.
+En la vista Design (3), se muestra una vista previa de cómo se ve tu app.
+
+
+En la pestaña Project, se muestran los archivos y las carpetas de tu proyecto.
+
+Un paquete es una carpeta en la que se encuentra el código. Android Studio organiza el proyecto en una estructura de directorios compuesta por un conjunto de paquetes.
+
+Recuerda que una función es un segmento de un programa que realiza una tarea específica.
+
+
+-- IMPORTANTE ---
+La función onCreate() es el punto de entrada a esta app para Android y llama a otras funciones para compilar la interfaz de usuario. En los programas de Kotlin, la función main() es el punto de entrada o de partida de la ejecución. En las apps para Android, la función onCreate() realiza esa tarea.
+
+
+La función setContent() dentro de la función onCreate() se usa para definir el diseño a través de funciones de componibilidad. Se puede llamar a todas las funciones marcadas con la anotación @Composable desde la función setContent() o desde otras de componibilidad. La anotación le indica al compilador de Kotlin que Jetpack Compose usa esta función para generar la IU
+
+
+Para habilitar la vista previa de una función de componibilidad, debes agregar una anotación @Composable y @Preview. 
+
+
+Una Surface es un contenedor que representa una sección de la IU en la que puedes modificar el aspecto, como el borde o el color de fondo.
+
+
+import androidx.compose.ui.graphics.Color     --PARA PONER UN COLOR
+
+Se usa un Modifier para aumentar o decorar un elemento componible

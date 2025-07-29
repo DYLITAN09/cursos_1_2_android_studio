@@ -1,0 +1,38 @@
+Apuntes- Unidad 1: Tu primera app para Android
+
+Ruta de aprendizaje 3: Crea un diseño básico
+
+¿Qué es una interfaz de usuario (IU)?
+La interfaz de usuario (IU) de una app es lo que ves en la pantalla: texto, imágenes, botones y muchos otros tipos de elementos, así como la forma en que esta información se presenta en pantalla. Así es como la app muestra elementos al usuario y cómo este interactúa con ella.
+
+
+Jetpack Compose es un kit de herramientas moderno para crear IUs de Android. Compose simplifica y acelera el desarrollo de IUs en Android con menos código, herramientas potentes y capacidades intuitivas de Kotlin. Con Compose, puedes compilar tu IU a partir de la definición de un conjunto de funciones, llamadas funciones de componibilidad, que toman datos y describen elementos de la IU.
+
+-- IMPORTANTE --
+Una función de componibilidad cumple con lo siguiente:
+
+Describe alguna parte de tu IU.
+No devuelve nada.
+Toma información y genera lo que se muestra en la pantalla.
+
+La función de Compose tiene las siguientes características:
+
+DEBE ser un sustantivo: DoneButton().
+NO debe ser un verbo ni una frase verbal: DrawTextField().
+NO debe ser una preposición convertida en sustantivo: TextFieldWithLink().
+NO debe ser un adjetivo: Bright().
+NO debe ser un adverbio: Outside().
+Los sustantivos PUEDEN estar precedidos por adjetivos descriptivos: RoundIcon().
+
+
+Los píxeles escalables (SP) son una unidad de medida para el tamaño de fuente. Los elementos de la IU en apps para Android usan dos unidades de medición diferentes: los píxeles independientes de la densidad (DP), que usarás más tarde para el diseño, y los píxeles escalables (SP).
+
+Los tres elementos de diseño estándar básicos en Compose son los elementos Column, Row y Box componibles. 
+
+
+Resource Manager es una ventana de herramientas que te permite importar, crear, administrar y usar recursos en tu app.
+
+Una clase R es una clase que Android genera automáticamente y que contiene los ID de todos los recursos en el proyecto.
+
+
+Un repositorio es el proyecto completo (directorios y archivos) que clonas (copias) en tu computadora. Una rama es una versión de tu repositorio o, en otras palabras, una línea de desarrollo independiente. Por ejemplo, en este curso, la rama starter podría ser una versión de un proyecto que usaste para compilar durante el codelab. La rama main o solution es la versión de tu proyecto al final del codelab, que contiene el código completo de la solución.
